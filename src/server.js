@@ -1,6 +1,14 @@
+const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const sendEmail = require("./sendEmail");
 
+const app = express();
+
+app.use(cors());
+app.use(bodyParser.json());
+
+// Route pour envoyer une lettre
 app.post("/send-letter", async (req, res) => {
   try {
     console.log("Requête reçue :", req.body); // Log pour déboguer les données reçues
@@ -15,3 +23,5 @@ app.post("/send-letter", async (req, res) => {
   }
 });
 
+const PORT = 5000;
+app.listen(PORT, () => console.log(`Serveur en cours d'exécution sur le port ${PORT}`));
