@@ -60,7 +60,8 @@ Créez un fichier .env à la racine avec les variables suivantes :
    ```
 
 ### **Explications :**
-• PORT : Port sur lequel le serveur écoute (par défaut : 5000).
-• SENDGRID_API_KEY : Clé API pour le service SendGrid (ou remplacez par votre service SMTP).
-• EMAIL_FROM : Adresse email source (expéditeur).
-• EMAIL_TO : Adresse email destination (Père Noël ou une boîte de réception).
+- PORT : Port sur lequel le serveur écoute (par défaut : 5000).
+- SENDGRID_API_KEY : Clé API pour le service SendGrid (ou remplacez par votre service SMTP).
+- EMAIL_FROM : Adresse email source (expéditeur).
+- EMAIL_TO : Adresse email destination (Père Noël ou une boîte de réception).
+  
