@@ -89,8 +89,7 @@ Le backend sera disponible à :
 ---
 
 ## **Endpoints**
-
-POST /send-letter
+### **POST /send-letter**
 Description : Permet à un utilisateur d'envoyer une lettre au Père Noël.
 Requête :
    ```json
