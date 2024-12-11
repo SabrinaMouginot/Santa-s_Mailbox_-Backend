@@ -16,7 +16,7 @@ Ce projet est le backend de l'application *Calendrier de l'Avent 2024*. Il perme
 
 - **Node.js** : Environnement d'exécution JavaScript pour le backend.
 - **Express.js** : Framework minimaliste pour la gestion des routes.
-- **SendGrid API (ou autre service d'email)** : Envoi des lettres par email.
+- **SendGrid API** : Envoi des lettres par email.
 - **JavaScript ES6+** : Utilisation de modules modernes pour structurer le code.
 
 ---
