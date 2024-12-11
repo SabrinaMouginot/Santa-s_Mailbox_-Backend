@@ -37,7 +37,7 @@ Avant de commencer, assurez-vous d'avoir installé les outils suivants :
 
 2. Accédez au dossier :
    ```bash
-cd santas-mailbox-backend
+   cd santas-mailbox-backend
 
 3. Installez les dépendances :
    ```bash
@@ -86,4 +86,32 @@ Le backend sera disponible à :
    http://localhost:5000
    ```
 
+---
+
+## **Endpoints**
+
+POST /send-letter
+Description : Permet à un utilisateur d'envoyer une lettre au Père Noël.
+Requête :
+   ```json
+{
+  "name": "Léa",
+  "email": "lea@example.com",
+  "letter": "Cher Père Noël..."
+}
+   ```
+
+Réponse (succès) :
+   ```json
+{
+  "message": "Votre lettre a été envoyée au Père Noël !"
+}
+   ```
+
+Réponse (erreur) :
+   ```json
+{
+  "error": "Une erreur est survenue lors de l'envoi de votre lettre."
+}
+   ```
 
