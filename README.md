@@ -64,4 +64,26 @@ Créez un fichier .env à la racine avec les variables suivantes :
 - SENDGRID_API_KEY : Clé API pour le service SendGrid (ou remplacez par votre service SMTP).
 - EMAIL_FROM : Adresse email source (expéditeur).
 - EMAIL_TO : Adresse email destination (Père Noël ou une boîte de réception).
-  
+
+
+---
+
+## **Lancement**
+Démarrez le serveur en mode développement :
+
+   ```bash
+   npm run dev
+   ```
+ou
+
+   ```bash
+   yarn dev
+   ```
+
+Le backend sera disponible à :
+
+   ```arduino
+   http://localhost:5000
+   ```
+
+
