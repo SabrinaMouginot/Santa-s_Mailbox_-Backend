@@ -114,3 +114,49 @@ Réponse (erreur) :
 }
    ```
 
+## **Déploiement**
+### **Avec OVH et FileZilla**
+
+1. Préparez votre backend.
+
+- Uploadez tous les fichiers backend via FileZilla vers votre serveur OVH.
+- Par exemple, placez les fichiers dans /api ou un répertoire spécifique.
+
+2. Configurez votre serveur :
+
+- Installez Node.js sur votre serveur OVH si ce n'est pas déjà fait.
+- Naviguez dans le dossier backend sur votre serveur via SSH.
+- Installez les dépendances en exécutant :
+
+   ```bash
+npm install
+
+- Démarrez le serveur avec :
+  
+   ```bash
+node server.js
+
+## **Structure des fichiers**
+   ```bash
+santas-mailbox-backend/
+├── .env                  # Variables d'environnement
+├── server.js             # Point d'entrée principal
+├── routes/               # Gestion des routes API
+│   └── letter.js         # Route pour envoyer une lettre
+├── controllers/          # Logique des contrôleurs
+│   └── letterController.js # Contrôleur pour gérer l'envoi des lettres
+├── services/             # Services auxiliaires
+│   └── emailService.js   # Service pour envoyer des emails
+├── package.json          # Dépendances du projet
+└── README.md             # Documentation
+   ```
+
+## **Tests**
+Pour s'assurer que le backend fonctionne correctement, vous pouvez utiliser des outils comme Postman ou cURL pour tester l'endpoint /send-letter.
+
+
+## **Améliorations futures**
+- Ajouter une base de données pour stocker les lettres envoyées.
+- Implémenter un système de pagination pour afficher les lettres dans une interface admin.
+- Ajouter des fonctionnalités multilingues pour prendre en charge plusieurs langues.
+
